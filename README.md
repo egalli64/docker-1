@@ -45,5 +45,18 @@ See the resulting web app on the browser
 - docker push {username}/getting-started
 
 ### Some useful commands
+- docker image ls
 - docker image prune -a     # remove all unused images
 - docker rmi {id}           # remove an image by id
+
+# Step 5
+- https://docs.docker.com/get-started/workshop/05_persisting_data/
+- docker volume create todo-db
+- docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=todo-db,target=/etc/todos getting-started
+- Add some items in the todo app
+- Stop and remove the container
+- Start a new container as above, the items persisted
+
+### Some useful commands
+- docker volume ls
+- docker volume inspect {volume-name}
