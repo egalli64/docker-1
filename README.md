@@ -30,9 +30,9 @@ See the resulting web app on the browser
 - docker run -dp 127.0.0.1:3000:3000 getting-started
 
 ### Some useful commands
-- docker stop <id>
-- docker rm <id>
-- docker rm -f <id>         # stop and remove
+- docker stop {id}
+- docker rm {id}
+- docker rm -f {id}         # stop and remove
 - docker system prune -a    # cleanup
 
 ## Step 4
@@ -40,10 +40,10 @@ See the resulting web app on the browser
 - Log in to https://hub.docker.com/
 - Push the "Create a repository" button
 - Name it "getting-started", and create it (as public)
-- docker tag getting-started <your-user>/getting-started
+- docker tag getting-started {username}/getting-started
 - docker login
-- docker push <your-user>/getting-started
+- docker push {username}/getting-started
 
 ### Some useful commands
 - docker image prune -a     # remove all unused images
-- docker rmi <id>           # remove an image by id
+- docker rmi {id}           # remove an image by id
