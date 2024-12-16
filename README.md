@@ -40,9 +40,9 @@ See the resulting web app on the browser
 - Log in to https://hub.docker.com/
 - Push the "Create a repository" button
 - Name it "getting-started", and create it (as public)
-- docker tag getting-started egalli64/getting-started
+- docker tag getting-started <your-user>/getting-started
 - docker login
-- docker push egalli64/getting-started
+- docker push <your-user>/getting-started
 
 ### Some useful commands
 - docker image prune -a     # remove all unused images
