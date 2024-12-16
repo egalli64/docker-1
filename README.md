@@ -34,3 +34,16 @@ See the resulting web app on the browser
 - docker rm <id>
 - docker rm -f <id>         # stop and remove
 - docker system prune -a    # cleanup
+
+## Step 4
+- https://docs.docker.com/get-started/workshop/04_sharing_app/
+- Log in to https://hub.docker.com/
+- Push the "Create a repository" button
+- Name it "getting-started", and create it (as public)
+- docker tag getting-started egalli64/getting-started
+- docker login
+- docker push egalli64/getting-started
+
+### Some useful commands
+- docker image prune -a     # remove all unused images
+- docker rmi <id>           # remove an image by id
